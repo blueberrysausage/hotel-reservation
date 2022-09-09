@@ -55,13 +55,13 @@ public class ReservationService {
             }
         }
         Collection<IRoom> rooms = mapOfRoom.values();
-        System.out.println("mapOfRoom: " + rooms);
+        //System.out.println("mapOfRoom: " + rooms);
         for (Reservation reservation : reservations) {
             rooms.remove(reservation.getRoom());
         }
-        System.out.println("rooms: " + rooms);
+        //System.out.println("rooms: " + rooms);
         availableRooms.addAll(rooms);
-        System.out.println("availableRooms: reservationservice" + availableRooms);
+        //System.out.println("availableRooms: reservationservice" + availableRooms);
         return availableRooms;
     }
 
